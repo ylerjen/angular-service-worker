@@ -1,0 +1,7 @@
+<form (ngSubmit)="submit($event)" name="search" class="align-items-center d-flex flex-row">
+    <label for="post-id-field" class="form-label">Post id <br />
+        <code class="field-info">(0 &lt; id &lt; 100)</code>
+    </label>
+    <input id="post-id-field" class="form-control ms-2" [(ngModel)]="id" name="id" type="number" min="1" max="100" />
+    <button type="submit" class="btn btn-primary ms-2">Search</button>
+</form>
